@@ -2,7 +2,7 @@ name: Build and Deploy to Dokku
 
 on:
   push:
-    branches: [main] # [test/deploy]  # [main, dev]
+    branches: [main, staging] # [test/deploy]  # [main, dev]
   workflow_dispatch:
 
 jobs:
