@@ -1,0 +1,14 @@
+name: Build and Deploy to Dokku
+
+on:
+  push:
+    branches: [main, dev] # [test/deploy]  # [main, dev]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print hello world
+      shell: bash
+      run: echo "hello 123"
